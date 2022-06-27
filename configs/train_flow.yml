@@ -1,0 +1,43 @@
+experiment: Default
+
+data:
+    path: ../datasets/dsec_train
+    mode: time  # events/time/gtflow
+    window: 0.01
+    passes_loss: 10  # length of the loss accumulation window
+    scales_loss: 1  # temporal scales for loss computation
+    voxel: Null  # number of bins
+    cache: False
+
+model:
+    name: RecEVFlowNet
+    final_w_scale: 0.01
+
+loss:
+    warping: Iterative  # Linear/Iterative
+    iterative_mode: two  # one/two/four (see notes)
+    round_ts: False
+    flow_scaling: 32
+    flow_spat_smooth_weight: Null  # Null to disable
+    flow_temp_smooth_weight: Null  # Null to disable
+    clip_grad: 100.0 # set to Null to disable
+
+optimizer:
+    name: Adam
+    lr: 0.00001
+
+loader:
+    n_epochs: 500
+    batch_size: 1
+    resolution: [128, 128] # H x W
+    augment: ["Horizontal", "Vertical", "Polarity"]
+    augment_prob: [0.5, 0.5, 0.5]
+    max_num_grad_events: 10000
+    gpu: 0
+    seed: Null  # random if Null
+
+vis:
+    verbose: True
+    enabled: False
+    store: False
+    px: 400

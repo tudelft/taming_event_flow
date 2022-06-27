@@ -1,0 +1,30 @@
+data:
+    path: ../datasets/mvsec_eval
+    mode: gtflow  # events/time/gtflow
+    window: 1
+    passes_loss: 1
+    cache: False
+
+loader:
+    resolution: [260, 346] # H x W
+    augment: []
+    max_num_grad_events: Null
+    gpu: 0
+    seed: Null  # random if Null
+
+metrics:
+    warping: Iterative  # Linear/Iterative
+    name: ["FWL", "RSAT", "AEE"]
+    eval_time: [222.4, 240.4]
+    mask_aee: True
+    res_aee: [256, 256]
+    vertical_crop_aee: 190
+
+vis:
+    enabled: True
+    px: 400
+    bars: True
+    store: False
+    mask_output: True
+    dynamic: False
+    show: Null  # Null for everything

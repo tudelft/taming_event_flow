@@ -1,0 +1,26 @@
+data:
+    path: ../datasets/dsec_benchmark_aug
+    mode: gtflow  # events/time/gtflow
+    window: 0.1
+    passes_loss: 10
+    cache: False
+
+loader:
+    resolution: [480, 640] # H x W
+    augment: []
+    max_num_grad_events: Null
+    gpu: 0
+    seed: Null  # random if Null
+
+metrics:
+    warping: Iterative  # Linear/Iterative
+    name: ["FWL", "RSAT", "AEE"]
+
+vis:
+    enabled: False
+    px: 400
+    bars: True
+    store: True
+    mask_output: False
+    dynamic: True
+    show: ["flow_bw"]  # Null for everything
