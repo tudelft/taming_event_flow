@@ -8,7 +8,7 @@ If you use this code in an academic context, please cite our work:
 @article{paredes2023taming,
   title={Taming Contrast Maximization for Learning Sequential, Low-latency, Event-based Optical Flow},
   author={Paredes-Vall{\'e}s, Federico and Scheper, Kirk Y. W. and De Wagter, Christophe and de Croon, Guido C. H. E.},
-  journal={arXiv preprint arXiv:2303.05214},
+  journal={IEEE/CVF International Conference on Computer Vision (ICCV)},
   year={2023}
 }
 
