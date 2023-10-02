@@ -1,6 +1,6 @@
 # Taming Contrast Maximization for Learning Sequential Event-based Optical Flow Estimation
 
-Work accepted at ICCV'23 [[paper](https://arxiv.org/abs/2303.05214)].
+Work accepted at ICCV'23 [[paper](https://arxiv.org/abs/2303.05214), [video](https://youtu.be/vkYimENc494)].
 
 If you use this code in an academic context, please cite our work:
 
