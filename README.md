@@ -121,7 +121,7 @@ If what you want to is to generate a submission to the [DSEC-Flow Optical Flow P
 python eval_flow.py <model_name> --config configs/eval_dsec.yml
 mkdir results_inference/<model_name>
 cp -r results_inference/<model_name>/results/eval_* results_inference/<model_name>/
-python prepare_dsec_submission <model_name> --path <path_results>
+python prepare_dsec_submission.py <model_name> --eval_id <eval_id>
 ```
 
 This will generate a `submission/` folder in the directory with your results. Zip it and submit!
