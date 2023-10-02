@@ -5,11 +5,13 @@ Work accepted at ICCV'23 [[paper](https://arxiv.org/abs/2303.05214), [video](htt
 If you use this code in an academic context, please cite our work:
 
 ```bibtex
-@article{paredes2023taming,
-  title={Taming Contrast Maximization for Learning Sequential, Low-latency, Event-based Optical Flow},
-  author={Paredes-Vall{\'e}s, Federico and Scheper, Kirk Y. W. and De Wagter, Christophe and de Croon, Guido C. H. E.},
-  journal={IEEE/CVF International Conference on Computer Vision (ICCV)},
-  year={2023}
+@InProceedings{Paredes-Valles_2023_ICCV,
+    author    = {Paredes-Vall\'es, Federico and Scheper, Kirk Y. W. and De Wagter, Christophe and de Croon, Guido C. H. E.},
+    title     = {Taming Contrast Maximization for Learning Sequential, Low-latency, Event-based Optical Flow},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {9695-9705}
 }
 
 ```
